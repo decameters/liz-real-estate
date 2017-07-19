@@ -15,11 +15,14 @@ You job, is to get this data onto the DOM. Use client side routing (`angular-rou
 
 There is no need to do any initial setup on the database. The following commands will create the **database**, **collections** and **documents** automatically! 
 
+> NOTE: You should complete these steps during work time on Friday before you leave.
+
 1. Download the *listingData.js* and *rentalData.js* files.
 2. In Terminal, navigate to the folder where you downloaded the above file (or move it to where you want it).
-3. Run this command in your Terminal: `mongoimport --db realestate --collection rentals --file rentalData.js`
-4. Run this command in your Terminal: `mongoimport --db realestate --collection listings --file listingData.js`
-
+3. Make sure mongo is running in a tab within termial
+4. Run this command in your Terminal: `mongoimport --db realestate --collection rentals --file rentalData.js`
+5. Run this command in your Terminal: `mongoimport --db realestate --collection listings --file listingData.js`
+6. You may need to close and re-open Robo 3T in order for these to appear 
 
 ## Hard Mode
 - [ ] Create an interface for adding additional rental or housing properties to the collection. You will need to give the user an option for either a Rent property, or a Sale property.
