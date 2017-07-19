@@ -1,8 +1,8 @@
 # Weekend Challenge 5 - Angular, Mongo, Bootstrap Oh My
 
-Welcome to weekend challenge 5! This weekend, you will take on the role of an application developer for a real estate company. You will be working with data that we will be providing to you. It will be a collection called *listings*. Inside of it, you will find information for properties that are either "for rent" or "for sale".
+Welcome to weekend challenge 5! This weekend, you will take on the role of an application developer for a real estate company. You will be working with data that we will be providing to you. After importing the data (instructions below), you should have two collections, *listings* and *rentals*. Inside of your collections, you will find information for properties that are either "for rent" or "for sale".
 
-You job, is to get this data onto the DOM, accounting for the inconsistent datatypes that are possible with MongoDB. But additionally, let’s bring in Bootstrap to the mix to make sure that the application looks as good as possible.
+You job, is to get this data onto the DOM. Use client side routing (`angular-route`) to display the rentals on a separate tab from the listings for purchase. For base mode, make your HTTP requests from your controllers. There should be two navigation buttons on the page allowing the user to switch between the two views. Additionally, let’s bring in Bootstrap to the mix to make sure that the application looks as good as possible.
 
 ## Project Requirements
 
@@ -13,12 +13,20 @@ You job, is to get this data onto the DOM, accounting for the inconsistent datat
 
 ## Importing the Provided Data File
 
-1. Download the *listingData.js* file.
+There is no need to do any initial setup on the database. The following commands will create the **database**, **collections** and **documents** automatically! 
+
+1. Download the *listingData.js* and *rentalData.js* files.
 2. In Terminal, navigate to the folder where you downloaded the above file (or move it to where you want it).
-3. Run this command in your Terminal: `mongoimport --db realestate --collection listings --file listingData.js`
+3. Run this command in your Terminal: `mongoimport --db realestate --collection rentals --file rentalData.js`
+4. Run this command in your Terminal: `mongoimport --db realestate --collection listings --file listingData.js`
+
 
 ## Hard Mode
-Create an interface for adding additional rental or housing properties to the collection. You will need to give the user an option for either a Rent property, or a Sale property.
+- [ ] Create an interface for adding additional rental or housing properties to the collection. You will need to give the user an option for either a Rent property, or a Sale property.
+
+- [ ] Move your HTTP requests from the controllers into a service.
 
 ## Pro Mode
-Host the application on Heroku and mLabs. You will need to transfer the data up to mLabs. You will need to research how to accomplish this.
+- [ ] Host the application on Heroku and mLabs. You will need to transfer the data up to mLabs. You will need to research how to accomplish this.
+
+- [ ] Ability to update or delete existing listings.
