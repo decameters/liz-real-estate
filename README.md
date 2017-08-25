@@ -1,16 +1,15 @@
-# Weekend Challenge 5 - Angular, Mongo, Bootstrap Oh My
+# Weekend Challenge 5 - Angular, Mongo, Mongoose Oh My!
 
 Welcome to weekend challenge 5! This weekend, you will take on the role of an application developer for a real estate company. You will be working with data that we will be providing to you. After importing the data (instructions below), you should have two collections, *listings* and *rentals*. Inside of your collections, you will find information for properties that are either "for rent" or "for sale".
 
-You job, is to get this data onto the DOM. Use client side routing (`angular-route`) to display the rentals on one view and another one to show listings for purchase. 
+Your job is to get this data onto the DOM. Use client side routing (`angular-route`) to display the rentals on one view and listings on another. 
 
-There should be two navigation links on the page allowing the user to switch between the two views. Additionally, let’s bring Bootstrap into the mix to make sure that the application looks as good as possible.
+There should be two navigation links on the page allowing the user to switch between the two views. 
 
 ## Project Requirements
 
 - [ ] Create a Full Stack application from the ground up using Angular, Node, Express, and MongoDB
 - [ ] Work with the data set that we have provide for you
-- [ ] Use Bootstrap to present the data
 - [ ] Account for the different data ("rent" versus "cost") and ensure that this is noted on the display of the information, by listing "For Rent" or "For Sale" based on which of the two properties that it has.
 - [ ] 2 routes, each with a controller and template file. One set for "For Rent" properties and another set for "For Sale" properties
 
@@ -29,6 +28,5 @@ There is no need to do any initial setup on the database. The following commands
 
 
 ## Pro Mode
-- [ ] Host the application on Heroku and mLabs. You will need to transfer the data up to mLabs. You will need to research how to accomplish this.
+- [ ] Move all HTTP/Ajax requests to Angular Service(s).
 - [ ] Ability to update or delete existing listings.
-
