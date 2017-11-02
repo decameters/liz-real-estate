@@ -2,7 +2,7 @@
 
 Welcome to weekend challenge 5! This weekend, you will take on the role of an application developer for a real estate company. You will be working with data that we will be providing to you. After importing the data (instructions below), you should have two collections, *listings* and *rentals*. Inside of your collections, you will find information for properties that are either "for rent" or "for sale".
 
-You job is to get this data onto the DOM. Use client side routing (`angular-route`) to display the rentals on one view and listings for purchase on another view. There should be two navigation links on the page allowing the user to switch between the two views. 
+You job is to get this data onto the DOM. Use client side routing (`angular-route`) to display the rentals on one view and listings for purchase on another view. There should be two navigation links on the page allowing the user to switch between the two views. Additionally, let’s bring Bootstrap into the mix to make sure that the application looks as good as possible.
 
 > NOTE: Deploying to Heroku is **not** required for this assignment. We will cover deployment with Mongo next week.
 
