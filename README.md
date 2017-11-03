@@ -31,4 +31,9 @@ There is no need to do any initial setup on the database. The following commands
 
 ## Pro Mode
 
-- [ ] Ability to update an existing record using a modal. You will need to research libraries that support modals (e.g. [Sweet Alert](https://sweetalert.js.org/) or [ui-bootstrap](https://angular-ui.github.io/bootstrap/))
+
+## Pro Mode
+
+- [ ] Ability to update an existing record using a pop up (modal). You will need to research libraries that support modals (e.g. [Sweet Alert](https://sweetalert.js.org/) or [ui-bootstrap](https://angular-ui.github.io/bootstrap/))
+- [ ] Display the least expensive property featured at the top of the page.
+- [ ] Ability to search or filter by various parameters (try doing this in Mongo instead of Angular)
