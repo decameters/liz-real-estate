@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LIZ'S LISTINGS</title>
+    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="vendors/angular/angular.js"></script>
+    <script src="vendors/angular-route/angular-route.js"></script>
+    <script src="scripts/client.js"></script>
+
+
+    <!-- CONTROLLERS -->
+    <!-- <script src="scripts/controllers/add.controller.js"></script> -->
+    <script src="scripts/controllers/buy.controller.js"></script>
+    <!-- <script src="scripts/controllers/rent.controller.js"></script> -->
+
+    <!-- SERVICES -->
+    <script src="scripts/services/buy.service.js"></script>
+    <!-- <script src="scripts/services/rent.service.js"></script> -->
+
 </head>
-<body>
+<body ng-app="ListingApp">
     <h1>LIZ'S LISTINGS buy or rent today!</h1>
+
+    <ng-view></ng-view>
 </body>
 </html>
