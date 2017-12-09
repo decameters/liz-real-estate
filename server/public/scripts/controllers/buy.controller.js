@@ -3,4 +3,6 @@ app.controller('BuyController', ['BuyService', function (BuyService) {
 
     self.message = BuyService.message;
 
+    self.buy = BuyService.buy;
+
 }])

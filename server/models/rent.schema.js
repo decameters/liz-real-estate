@@ -3,10 +3,10 @@ var Schema = mongoose.Schema;
 
 
 //create a new Schema for movie
-var rentalSchema = new Schema({
+var rentSchema = new Schema({
     rent: { type: Number, required: true },
     sqft: { type: Number },
     city: { type: String }
 });
 
-module.exports = mongoose.model('Rental', rentalSchema);
+module.exports = mongoose.model('Rent', rentSchema);
