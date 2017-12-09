@@ -1,12 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-
-//create a new Schema for movie
 var rentSchema = new Schema({
     rent: { type: Number, required: true },
     sqft: { type: Number },
-    city: { type: String }
-});
+    city: { type: String },
+},
+    { collection : 'rent' }
+);
 
-module.exports = mongoose.model('Rent', rentSchema);
+module.exports = mongoose.model('rent', rentSchema);

@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 
 var mongooseConnection = require('./modules/mongoose-connection');
 var buy = require('./routes/buy');
+var rent = require('./routes/rent');
 
 var app = express();
 var port = process.env.PORT || 5000;
@@ -15,6 +16,7 @@ mongooseConnection.connect();
 
 // EXPRESS ROUTES
 app.use('/buy', buy);
+app.use('/rent', rent);
 
 app.listen(port, function(){
     console.log('listening on port', port);  
