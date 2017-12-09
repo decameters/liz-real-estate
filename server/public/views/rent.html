@@ -1,6 +1,19 @@
 <h3>listings available for rent</h3>
-{{vm}}
 
-{{vm.message}}
-
-{{vm.rent}}
+<table>
+        <thead>
+            <tr>
+                <th>location</th>
+                <th>rent</th>
+                <th>square footage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="rent in vm.rent.list">
+                <td>{{rent.city}}</td>
+                <td>{{rent.rent}}</td>
+                <td>{{rent.sqft}}</td>
+                <!-- <td><button ng-click="vm.deleteHero(hero)">delete</button></td> -->
+            </tr>
+        </tbody>
+    </table>
