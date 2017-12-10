@@ -1,7 +1,16 @@
 body {
-    margin: 30px
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 .btn {
-    background-color: lightsteelblue;
+    background-color: wheat;
     color: black;
+}
+
+a {
+    color: steelblue;
+}
+
+h1 {
+    color: steelblue;
 }

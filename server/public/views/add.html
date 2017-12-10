@@ -4,7 +4,7 @@
 <button class="btn" ng-click="newBuy.isEditable = !newBuy.isEditable">Listing for PURCHASE</button>
 
 <div ng-show="newRent.isEditable">
-    <h4>Add new home for rent</h4>
+    <h4>Add new home for rent:</h4>
     <input type="text" ng-model="vm.newRent.city" placeholder="location">
     <input type="number" ng-model="vm.newRent.rent" placeholder="rent">
     <input type="number" ng-model="vm.newRent.sqft" placeholder="square footage">
@@ -15,7 +15,7 @@
 
 
 <div ng-show="newBuy.isEditable">
-    <h4>Add new home for purchase</h4>
+    <h4>Add new home for purchase:</h4>
     <input type="text" ng-model="vm.newBuy.city" placeholder="location">
     <input type="number" ng-model="vm.newBuy.cost" placeholder="cost">
     <input type="number" ng-model="vm.newBuy.sqft" placeholder="square footage">
