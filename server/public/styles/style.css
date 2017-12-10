@@ -7,10 +7,27 @@ body {
     color: black;
 }
 
+.btn:hover {
+    background-color: steelblue;
+    color: white;
+}
+
 a {
     color: steelblue;
 }
 
 h1 {
     color: steelblue;
+}
+
+.jumbotron {
+    background-image: url("../images/home1.jpg");
+    background-size: cover;
+    height: 650px;
+    color: white;
+    
+}
+
+.jumbotron h1 {
+    padding-top: 350px;
 }
