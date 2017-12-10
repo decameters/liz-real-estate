@@ -19,4 +19,16 @@ app.service('BuyService', ['$http', function ($http) {
 
     self.getBuy();
 
+    self.deleteBuy = function(buyToDelete){
+        
+                $http({
+                    method: 'DELETE',
+                    url: '/buy/' + buyToDelete._id,
+                    data: buyToDelete
+                }).then(function(response){
+                    console.log('response', response);
+                    self.getBuy();
+                });
+            }
+
 }]);

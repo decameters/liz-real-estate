@@ -5,4 +5,6 @@ app.controller('BuyController', ['BuyService', function (BuyService) {
 
     self.buy = BuyService.buy;
 
+    self.deleteBuy = BuyService.deleteBuy;
+
 }])

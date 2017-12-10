@@ -1,27 +1,31 @@
-<h3>add a new home for rent or purchase!</h3>
- {{vm.message}}
+<h3>Add a new home for rent or purchase!</h3>
 
-<button ng-click="newRent.isEditable = !newRent.isEditable">listing for rent</button>
-<button ng-click="newBuy.isEditable = !newBuy.isEditable">listing for purchase</button>
-    
+<button class="btn" ng-click="newRent.isEditable = !newRent.isEditable">Listing for RENT</button>
+<button class="btn" ng-click="newBuy.isEditable = !newBuy.isEditable">Listing for PURCHASE</button>
+
 <div ng-show="newRent.isEditable">
-    <h3>add new home for rent</h3>
+    <h4>Add new home for rent</h4>
     <input type="text" ng-model="vm.newRent.city" placeholder="location">
     <input type="number" ng-model="vm.newRent.rent" placeholder="rent">
     <input type="number" ng-model="vm.newRent.sqft" placeholder="square footage">
-    <button ng-click="vm.addNewRent(vm.newRent)">add home</button>
+    <br>
+    <br>
+    <button class="btn" ng-click="vm.addNewRent(vm.newRent)">Add home</button>
 </div>
 
-<div ng-show="newBuy.isEditable">
-        <h3>add new home for purchase</h3>
-        <input type="text" ng-model="vm.newBuy.city" placeholder="location">
-        <input type="number" ng-model="vm.newBuy.cost" placeholder="cost">
-        <input type="number" ng-model="vm.newBuy.sqft" placeholder="square footage">
-        <button ng-click="vm.addNewBuy(vm.newBuy)">add home</button>
-    </div>
-     
 
- <!-- <div class="container">
+<div ng-show="newBuy.isEditable">
+    <h4>Add new home for purchase</h4>
+    <input type="text" ng-model="vm.newBuy.city" placeholder="location">
+    <input type="number" ng-model="vm.newBuy.cost" placeholder="cost">
+    <input type="number" ng-model="vm.newBuy.sqft" placeholder="square footage">
+    <br>
+    <br>
+    <button class="btn" ng-click="vm.addNewBuy(vm.newBuy)">Add home</button>
+</div>
+
+
+<!-- <div class="container">
         <div class="jumbotron text-center">
             <h1>Add A Movie</h1>
         </div>

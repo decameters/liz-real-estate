@@ -1,21 +1,20 @@
-<h3>listings available for purchase</h3>
+<h3>Listings available for purchase:</h3>
 
-<table>
-        <thead>
-            <tr>
-                <th>location</th>
-                <th>cost</th>
-                <th>square footage</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="buy in vm.buy.list">
-                <td>{{buy.city}}</td>
-                <td>{{buy.cost}}</td>
-                <td>{{buy.sqft}}</td>
-                <!-- <td><button ng-click="vm.deleteHero(hero)">delete</button></td> -->
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- {{vm.buy.list[0].city}} -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Location</th>
+            <th>Cost</th>
+            <th>Sq. Footage</th>
+            <th>Remove Listing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="buy in vm.buy.list">
+            <td>{{buy.city}}</td>
+            <td>{{buy.cost}}</td>
+            <td>{{buy.sqft}}</td>
+            <td><button ng-click="vm.deleteBuy(buy)">X</button></td>            
+        </tr>
+    </tbody>
+</table>

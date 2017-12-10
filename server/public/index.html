@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,13 +27,30 @@
     <script src="scripts/services/rent.service.js"></script>
 
 </head>
+
+
 <body ng-app="ListingApp">
-        <a href="#!">Home</a>
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active">
+            <a href="#!">Home</a>
+        </li>
+        <li role="presentation">
+            <a href="#!buy">Buy</a>
+        </li>
+        <li role="presentation">
+            <a href="#!rent">Rent</a>
+        </li>
+        <li role="presentation">
+            <a href="#!add">Add A Listing</a>
+        </li>
+    </ul>
+    <!-- <a href="#!">Home</a>
         <a href="#!buy">Buy</a>
         <a href="#!rent">Rent</a>
-        <a href="#!add">Add A Listing</a>
+        <a href="#!add">Add A Listing</a> -->
     <h1>LIZ'S LISTINGS</h1>
-    
+
     <ng-view></ng-view>
 </body>
+
 </html>

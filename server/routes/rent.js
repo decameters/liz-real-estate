@@ -27,5 +27,16 @@ router.post('/', function (req, res) {
     });
 });
 
+router.delete('/:id', function (req, res) {
+    Rent.remove({_id:req.params.id}, function (errorMakingDatabaseQuery, data) {
+        if (errorMakingDatabaseQuery) {
+            console.log('error with rent delete', errorMakingDatabaseQuery);
+            res.sendStatus(500);
+        } else {
+            res.sendStatus(200);
+        }
+    });
+});
+
 
 module.exports = router;

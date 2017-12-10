@@ -19,4 +19,16 @@ app.service('RentService', ['$http', function ($http) {
 
     self.getRent();
 
+    self.deleteRent = function(rentToDelete){
+        
+                $http({
+                    method: 'DELETE',
+                    url: '/rent/' + rentToDelete._id,
+                    data: rentToDelete
+                }).then(function(response){
+                    console.log('response', response);
+                    self.getRent();
+                });
+            }
+
 }]);

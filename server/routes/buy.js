@@ -10,7 +10,6 @@ router.get('/', function (req, res) {
             res.sendStatus(500);
         } else {
             res.send(data);
-            // res.sendStatus(200);
         }
     })
 });
@@ -23,6 +22,17 @@ router.post('/', function (req, res) {
             res.sendStatus(500);
         } else {
             res.sendStatus(201);
+        }
+    });
+});
+
+router.delete('/:id', function (req, res) {
+    Buy.remove({_id:req.params.id}, function (errorMakingDatabaseQuery, data) {
+        if (errorMakingDatabaseQuery) {
+            console.log('error with buy delete', errorMakingDatabaseQuery);
+            res.sendStatus(500);
+        } else {
+            res.sendStatus(200);
         }
     });
 });
