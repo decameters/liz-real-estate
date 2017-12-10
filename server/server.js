@@ -18,6 +18,6 @@ mongooseConnection.connect();
 app.use('/buy', buy);
 app.use('/rent', rent);
 
-app.listen(port, function(){
-    console.log('listening on port', port);  
+app.listen(port, function () {
+    console.log('listening on port', port);
 });

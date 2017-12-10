@@ -27,7 +27,7 @@ router.post('/', function (req, res) {
 });
 
 router.delete('/:id', function (req, res) {
-    Buy.remove({_id:req.params.id}, function (errorMakingDatabaseQuery, data) {
+    Buy.remove({ _id: req.params.id }, function (errorMakingDatabaseQuery, data) {
         if (errorMakingDatabaseQuery) {
             console.log('error with buy delete', errorMakingDatabaseQuery);
             res.sendStatus(500);

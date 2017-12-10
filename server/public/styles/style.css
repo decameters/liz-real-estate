@@ -20,6 +20,10 @@ h1 {
     color: steelblue;
 }
 
+h3, p {
+    font-style: italic;
+}
+
 .jumbotron {
     background-image: url("../images/home1.jpg");
     background-size: cover;
