@@ -13,6 +13,7 @@ app.service('AddService', ['$http', function ($http) {
             data: newRent
         }).then(function (response) {
             console.log('response', response);
+            alert('Success! New listing for rent has been added!');            
             newRent.city = '';
             newRent.sqft = '';
             newRent.rent = '';
@@ -28,6 +29,7 @@ app.service('AddService', ['$http', function ($http) {
             data: newBuy
         }).then(function (response) {
             console.log('response', response);
+            alert('Success! New listing for purchase has been added!');
             newBuy.city = '';
             newBuy.sqft = '';
             newBuy.cost = '';
