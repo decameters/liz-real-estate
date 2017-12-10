@@ -1,0 +1,37 @@
+<h3>add a new home for rent or purchase!</h3>
+ {{vm.message}}
+
+<button ng-click="newRent.isEditable = !newRent.isEditable">listing for rent</button>
+<button ng-click="newBuy.isEditable = !newBuy.isEditable">listing for purchase</button>
+    
+<div ng-show="newRent.isEditable">
+    <h3>add new home for rent</h3>
+    <input type="text" ng-model="vm.newRent.city" placeholder="location">
+    <input type="number" ng-model="vm.newRent.rent" placeholder="rent">
+    <input type="number" ng-model="vm.newRent.sqft" placeholder="square footage">
+    <button ng-click="vm.addNewRent(vm.newRent)">add home</button>
+</div>
+
+<div ng-show="newBuy.isEditable">
+        <h3>add new home for purchase</h3>
+        <input type="text" ng-model="vm.newBuy.city" placeholder="location">
+        <input type="number" ng-model="vm.newBuy.cost" placeholder="cost">
+        <input type="number" ng-model="vm.newBuy.sqft" placeholder="square footage">
+        <button ng-click="vm.addNewBuy(vm.newBuy)">add home</button>
+    </div>
+     
+
+ <!-- <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Add A Movie</h1>
+        </div>
+        <div class="col-md-12">
+            <input type="text" class="form-control" placeholder="add new movie title" ng-model="vm.newMovie.title">
+            <br>
+            <input type="text" class="form-control" placeholder="add image URL" ng-model="vm.newMovie.posterUrl">
+            <br>
+            <textarea type="text" class="form-control" rows="2" placeholder="description" ng-model="vm.newMovie.description"></textarea>
+            <br>
+            <button class="btn btn-default" ng-click="vm.addNewMovie(vm.newMovie)">add new movie</button>
+        </div>
+    </div> -->
