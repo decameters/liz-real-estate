@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 
-var mongooseConnection = require('./modules/mongoose-connection');
+require('./modules/mongoose-connection');
 var buy = require('./routes/buy');
 var rent = require('./routes/rent');
 
@@ -12,7 +12,7 @@ var port = process.env.PORT || 5000;
 // MIDDLEWARE
 app.use(bodyParser.json());
 app.use(express.static('server/public'));
-mongooseConnection.connect();
+// mongooseConnection.connect();
 
 // EXPRESS ROUTES
 app.use('/buy', buy);
