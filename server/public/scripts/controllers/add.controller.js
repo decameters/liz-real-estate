@@ -1,9 +1,9 @@
-app.controller('AddController', ['AddService', function (AddService) {
+app.controller('AddController', ['HomeService', function (HomeService) {
     var self = this;
 
-    self.message = AddService.message;
+    self.message = HomeService.message;
 
-    self.addNewRent = AddService.addNewRent;
+    self.addNewRent = HomeService.addNewRent;
 
-    self.addNewBuy = AddService.addNewBuy;
+    self.addNewBuy = HomeService.addNewBuy;
 }])

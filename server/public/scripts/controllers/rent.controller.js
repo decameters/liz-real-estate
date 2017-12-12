@@ -1,10 +1,10 @@
-app.controller('RentController', ['RentService', function (RentService) {
+app.controller('RentController', ['HomeService', function (HomeService) {
     var self = this;
 
-    self.message = RentService.message;
+    self.message = HomeService.message;
 
-    self.rent = RentService.rent;
+    self.rent = HomeService.rent;
 
-    self.deleteRent = RentService.deleteRent;
+    self.deleteRent = HomeService.deleteRent;
 
 }])

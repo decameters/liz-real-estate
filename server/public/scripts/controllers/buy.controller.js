@@ -1,10 +1,10 @@
-app.controller('BuyController', ['BuyService', function (BuyService) {
+app.controller('BuyController', ['HomeService', function (HomeService) {
     var self = this;
 
-    self.message = BuyService.message;
+    self.message = HomeService.message;
 
-    self.buy = BuyService.buy;
+    self.buy = HomeService.buy;
 
-    self.deleteBuy = BuyService.deleteBuy;
+    self.deleteBuy = HomeService.deleteBuy;
 
 }])
