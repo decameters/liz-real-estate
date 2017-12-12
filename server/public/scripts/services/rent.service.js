@@ -29,6 +29,7 @@ app.service('RentService', ['$http', function ($http) {
                     console.log('response', response);
                     self.getRent();
                 });
+            // don't put your self.getRent() here
             }
 
 }]);

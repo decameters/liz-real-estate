@@ -29,6 +29,7 @@ app.service('BuyService', ['$http', function ($http) {
             console.log('response', response);
             self.getBuy();
         });
+    // don't put your self.getBuy() here
     }
 
 }]);
